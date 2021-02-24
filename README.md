@@ -20,16 +20,21 @@ https://frozen-cliffs-94654.herokuapp.com
 3. According to the filter form's input, the APIs' data is filtered and the home templated in rendered with the filtered data.
 
 ### Flowchart 
-
-<img src="images/flowchart.png" width="700" height="500">
+<p align="center">
+  <img src="images/flowchart.png">
+</p>
 
 ### App screenshots
 
-<img src="images/img1.png" width="700" height="500">
-
-<img src="images/img2.png" width="700" height="500">
-
-<img src="images/img3.png" width="700" height="500">
+<p align="center">
+  <img src="images/img1.png" >
+</p>
+<p align="center">
+  <img src="images/img2.png" >
+</p>
+<p align="center">
+ <img src="images/img3.png" >
+</p>
 
 
 ### API's used for fetching data
