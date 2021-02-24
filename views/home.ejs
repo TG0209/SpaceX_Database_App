@@ -1,0 +1,46 @@
+<%- include("../partials/header") %>
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>Welcome to Database</h1>
+			<p>Contains entire informaton of SpaceX program !!</p>
+		</div>
+	</header>
+	<form  method="POST" action="/data/new" >
+			<div class=" form-check form-check-inline">
+				  <label><input name="launch" type="checkbox" value="Successful Launch">Successful Launch</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <label><input name="land" type="checkbox" value="Successful Landing">Successful Landing</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="text" class="form-control mb-2"  name="year" placeholder="Launch Year">
+			</div>
+		<button type="submit" class="btn btn-primary my-1">Submit</button>
+	</form>	
+	<table class="table">
+	  <thead  class="thead-dark">
+		<tr>
+		  <th scope="col">Sr No.</th>
+		  <th scope="col">Mission Name</th>
+		  <th scope="col">Launch Year</th>
+		  <th scope="col">Successful Launch</th>
+		  <th scope="col">Successful Landing</th>
+		</tr>
+	  </thead>
+  	<tbody>
+	<% let i=1 %>
+	<% Data.forEach(function(data){ %>
+    <tr>
+      <th scope="row"><%= i %></th>
+		<td><%= data.mission_name %></td>
+		<td><%= data.launch_year %></td>
+		<td><%= data.launch_success %></td>
+		<td><%= data.rocket.first_stage.cores[0].land_success%></td>
+    </tr>
+  	<% i++; 
+	  }) %>
+  </tbody>
+</table>
+	
+<%- include("../partials/footer") %>

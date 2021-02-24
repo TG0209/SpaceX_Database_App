@@ -1,0 +1,22 @@
+/* display buttons inline */
+.del {
+	display:inline;
+	margin:10px;
+}
+
+/* Button full width */
+#btn{
+	width:100%;
+}
+
+/* assigning google font to body */
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* custom css for filter form */
+.form-check-inline {
+	padding-left : 130px;
+	padding-top : 25px;
+	padding-bottom : 25px;
+}
