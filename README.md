@@ -21,7 +21,7 @@ https://frozen-cliffs-94654.herokuapp.com
 
 ### Flowchart 
 <p align="center">
-  <img src="images/flowchart.png">
+  <img src="images/flow.png">
 </p>
 
 ### App screenshots
